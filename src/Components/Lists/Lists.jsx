@@ -1,7 +1,7 @@
 import React  from 'react';
 import List from '../List/List';
 
-const Lists = ({listsItems,handleAdd}) => {
+const Lists = ({listsItems,handleAdd,handleDelete}) => {
 
     return (
            <div className='w-11/12 mx-auto flex flex-col justify-center '>
@@ -14,7 +14,7 @@ const Lists = ({listsItems,handleAdd}) => {
         </form >
          <h2 className='text-xl  font-semibold  py-2 underline text-center'  >Your List  </h2>
 
-        <List listsItems={listsItems}></List>
+        <List listsItems={listsItems} handleDelete={handleDelete}></List>
         </div>
     );
 };
