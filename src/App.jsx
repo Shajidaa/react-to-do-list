@@ -46,8 +46,11 @@ const handleAdd=(e)=>{
 
   return (
     <>
+    <div className='max-w-4xl mx-auto flex flex-col justify-center   h-screen'>
 <Navbar></Navbar>
 <Lists listsItems={listsItems} handleDelete={handleDelete} handleAdd={handleAdd} ></Lists>
+    </div>
+
     </>
   )
 }

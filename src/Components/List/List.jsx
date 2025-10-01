@@ -2,12 +2,12 @@ import React from 'react';
 
 const List = ({listsItems,handleDelete}) => {
     return (
-       <ul className=' flex flex-col justify-center '>
+       <ul className='list-disc  flex flex-col    '>
         {
 
-            listsItems.map((item ,i)=>
+            listsItems.map((item ,i)=> 
 
-          <li key={i}> <p >{item} <span onClick={()=>handleDelete(item)}>❌</span>
+                  <li  key={i}> <p className='flex flex-row justify-between items-center' >{item} <span className='gap-2'  onClick={()=>handleDelete(item)}>❌</span>
                         </p> 
                 </li>
             )
@@ -17,4 +17,4 @@ const List = ({listsItems,handleDelete}) => {
     );
 };
 
-export default List;       
+export default List;        
