@@ -31,8 +31,8 @@ const handleAdd=(e)=>{
     //   return  alert ("all add it")
 
     // }
-    const isExtie=listsItems.find((item)=>item.toLowerCase() ===list.toLowerCase())
-    if (isExtie) {
+    const isExit=listsItems.find((item)=>item.toLowerCase() ===list.toLowerCase())
+    if (isExit) {
       return alert ('all ready add ')
     }
 
